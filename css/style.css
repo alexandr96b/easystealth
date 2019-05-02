@@ -413,71 +413,9 @@ textarea{
 	justify-content: center;
 	color: #FFFFFF;		
 }
-
 .b-mobile{
 	display: none;
 }
-.menu-icon{
-    position: relative;
-    z-index: 10001;
-    cursor: pointer;
-	transition: 0.3s;
-	top: 0;
-}
-.menu-icon.active{
-	transition: 0.3s;
-	z-index: 99999999999999;
-}
-.menu-icon__wrapper{
-	position: relative;
-	width: 30px;
-	height: 18px;
-}
-.menu-icon.active b{
-	transition: 0.5s;
-}
-.menu-icon .b-menu__line {
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 2px;
-    background: #262626;
-    -webkit-transition: background-color 0.35s, -webkit-transform 0.175s cubic-bezier(0.215, 0.61, 0.355, 1), opacity 0.175s cubic-bezier(0.215, 0.61, 0.355, 1);
-    transition: background-color 0.35s, transform 0.175s cubic-bezier(0.215, 0.61, 0.355, 1), opacity 0.175s cubic-bezier(0.215, 0.61, 0.355, 1);
-    -webkit-transform: translateY(0) translateZ(0);
-    transform: translateY(0) translateZ(0);
-    border-radius: 120px;
-}
-.menu-icon .b-menu__line_1 {
-    top: 0;
-}
-.menu-icon .b-menu__line_2 {
-    top: 8px;
-}
-.menu-icon .b-menu__line_3 {
-    top: 15px;
-    width: 60%;
-}
-.menu-icon.active .b-menu__line {
-    background: #ffffff;
-}
-.menu-icon.active .b-menu__line_1 {
-    -webkit-transform: translateY(8px) rotate(45deg);
-    transform: translateY(8px) rotate(45deg);
-    top: 0px;
-}
-.menu-icon.active .b-menu__line_2 {
-    opacity: 0;
-}
-.menu-icon.active .b-menu__line_3 {
-    -webkit-transform: translateY(-8px) rotate(-45deg);
-    transform: translateY(-8px) rotate(-45deg);
-    top: 16px;
-    width: 100%;
-}
-
 /* --------------  b-main -------------- */
 .b-main{
 	background: #008CFF;
@@ -792,7 +730,6 @@ textarea{
 	transition: 0.3s;
 	text-decoration: none;
 }
-
 .b-footer-list{
 
 }
@@ -813,4 +750,124 @@ textarea{
 .b-footer-list ul li a{
 	display: block;
 	width: 48px;
+}
+/* -------------- page faq -------------- */
+.b-content{
+	padding: 80px 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.b-faq{
+
+}
+.b-faq-item{
+	margin: 0 0 40px 0;
+}
+.b-faq-item:last-child{
+	margin: 0;
+}
+.b-faq-item b{
+	display: block;
+	font-family: 'Istok Web', sans-serif;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 20px;
+	color: #262626;	
+	margin: 0 0 20px 0;
+}
+.b-faq-item p{
+	font-family: 'Istok Web', sans-serif;	
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 25px;
+	color: #262626;
+}
+.b-faq-item p:last-child{
+	margin: 0;
+}
+/* -------------- page b-reviews-page -------------- */
+.b-reviews-page{
+	padding: 80px 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background: #F7F9FC;
+}
+.b-reviews-page .b-reviews-item{
+	margin: 0 0 30px 0;
+}
+.b-reviews-page__wrap{
+	padding: 0px 205px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;	
+}
+.b-reviews-page .b-reviews-item p{
+	margin: 15px 0 0 0;
+}
+.b-reviews-date{
+	font-family: 'Istok Web', sans-serif;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 17px;
+	color: #262626;
+	margin: 15px 0 0 0;
+}
+.b-reviews-page .b-reviews-item:before{
+	display: none;
+}
+
+.b-form{
+	width: 760px;
+	margin: 0 auto 0;
+}
+.b-form-row{
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+.b-form-item{
+	width: 100%;
+	margin: 0 40px 20px 0;
+}
+.b-form-item span{
+	display: block;
+	font-family: 'Istok Web', sans-serif;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 18px;
+	color: #262626;	
+	margin: 0 0 10px 0;
+}
+.b-form-input{
+	width: 100%;
+	height: 40px;
+	background: #FFFFFF;
+	border: 1px solid #909399;
+	box-sizing: border-box;
+	border-radius: 4px;
+	padding: 0 10px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.b-form-item:last-child{
+	margin-right: 0;
+}
+.b-textarea{
+	width: 100%;
+	height: 90px;
+	background: #FFFFFF;
+	border: 1px solid #909399;
+	box-sizing: border-box;
+	border-radius: 4px;
+	padding: 10px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.b-form-btn{
+	margin: 40px auto 0;
 }

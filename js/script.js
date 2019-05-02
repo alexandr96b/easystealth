@@ -17,24 +17,20 @@ $(".b-menu-left a").click(function (event) {
 });
 
 $('.menu-icon').click(function(){
-  $('.b-menu').toggleClass('active');
+  $('.b-nav').toggleClass('active');
   $(this).toggleClass('active');
 });
 
 
 $(document).on('click', function(e) {
-  if (!$(e.target).closest(".menu-icon , .b-menu-wrap").length) {
-    $('.b-menu').removeClass('active');
+  if (!$(e.target).closest(".menu-icon , .b-nav").length) {
+    $('.b-nav').removeClass('active');
     $('.menu-icon').removeClass('active');
   }
   e.stopPropagation();
 });
 
 
-$('.menu-close').click(function(){
-  $('.menu-icon').removeClass('active');
-  $('.b-menu').removeClass('active');
-});
 
 $(".modal1").fancybox();
 

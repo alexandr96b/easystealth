@@ -10,15 +10,248 @@
 }
 
 @media (max-width: 1200px) {
-
+	.b-info-item__text p{
+		font-size: 14px;
+	}
+	.b-info-item{
+	    padding: 20px 5px;
+	}
+	.b-info-item__img{
+		width: 45px;
+		margin: 0 13px 0 0;
+	}
+	.b-footer{
+		flex-wrap: wrap;
+	}
+	.b-footer-social{
+		flex-grow: inherit;
+		width: auto;
+		justify-content: flex-end;
+	}
+	.b-footer-social ul{
+		margin: 0;
+	}
+	.b-footer-list{
+		width: 100%;
+		margin: 60px 0 0 0;
+	}
 }	
 
 
 @media (max-width: 991px){
-
+	.b-nav ul li a{
+		font-size: 14px;
+		line-height: 16px;
+	}
+	.b-nav > ul > li{
+		margin: 0 27px 0 0;
+	}
+	.b-cart{
+		margin: 0 0 0 27px;
+	}
+	.b-main-right{
+		width: 350px;
+	}
+	.b-main-title{
+		font-size: 22px;
+		line-height: 28px;
+		margin: 0 0 15px 0;
+	}
+	.b-main-left p{
+		font-size: 15px;
+		margin: 0 0 15px 0;
+	}
+	.b-info-item{
+		margin: 0 0 30px 0;
+		align-items: center;
+	}
+	.b-info-bottom{
+		margin: 30px 0 0 0;
+	}
+	.b-services-item__text b{
+		font-size: 17px;
+	}
+	.b-services-item__text p{
+		font-size: 14px;
+	}
+	.b-reviews-item{
+		margin: 0 0 30px 0;
+	}
 }
 @media (max-width: 767px) {
-
+	.b-main-right{
+		display: none;
+	}
+	.b-mobile{
+		display: block;
+	}	
+	.menu-icon{
+	    position: relative;
+	    z-index: 10001;
+	    cursor: pointer;
+		transition: 0.3s;
+		top: 0;
+	}
+	.menu-icon.active{
+		transition: 0.3s;
+		z-index: 99999999999999;
+	}
+	.menu-icon__wrapper{
+		position: relative;
+		width: 24px;
+		height: 18px;
+	}
+	.menu-icon.active b{
+		transition: 0.5s;
+	}
+	.menu-icon .b-menu__line {
+	    display: block;
+	    position: absolute;
+	    left: 0;
+	    top: 0;
+	    width: 100%;
+	    height: 2px;
+	    background: #262626;
+	    -webkit-transition: background-color 0.35s, -webkit-transform 0.175s cubic-bezier(0.215, 0.61, 0.355, 1), opacity 0.175s cubic-bezier(0.215, 0.61, 0.355, 1);
+	    transition: background-color 0.35s, transform 0.175s cubic-bezier(0.215, 0.61, 0.355, 1), opacity 0.175s cubic-bezier(0.215, 0.61, 0.355, 1);
+	    -webkit-transform: translateY(0) translateZ(0);
+	    transform: translateY(0) translateZ(0);
+	    border-radius: 120px;
+	}
+	.menu-icon .b-menu__line_1 {
+	    top: 0;
+	}
+	.menu-icon .b-menu__line_2 {
+	    top: 8px;
+	}
+	.menu-icon .b-menu__line_3 {
+	    top: 15px;
+	}
+	.menu-icon.active .b-menu__line {
+	    background: #262626;
+	}
+	.menu-icon.active .b-menu__line_1 {
+	    -webkit-transform: translateY(8px) rotate(45deg);
+	    transform: translateY(8px) rotate(45deg);
+	    top: 0px;
+	}
+	.menu-icon.active .b-menu__line_2 {
+	    opacity: 0;
+	}
+	.menu-icon.active .b-menu__line_3 {
+	    -webkit-transform: translateY(-8px) rotate(-45deg);
+	    transform: translateY(-8px) rotate(-45deg);
+	    top: 16px;
+	    width: 100%;
+	}
+	.b-header{
+		padding: 10px 15px;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	.b-logo{
+		position: relative;
+		z-index: 102;
+	}
+	.b-nav{
+		position: absolute;
+		top: 0;
+		left: -300px;
+		background: #ffffff;
+		padding: 92px 15px 45px 30px;
+		z-index: -1;
+		box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.15);
+		transition: 0.3s;
+		opacity: 0;
+		visibility: hidden;
+	}
+	.b-nav.active{
+		z-index: 100;
+		opacity: 1;
+		visibility: visible;
+		left: 0;
+		transition: 0.3s;
+	}
+	.b-nav ul{
+		display: block;
+	}
+	.b-nav ul li{
+		margin: 0 0 32px 0;
+	}
+	.b-nav ul li:last-child{
+		margin: 0;
+	}
+	.b-nav ul li a{
+		font-size: 24px;
+		line-height: 26px;
+		padding: 0;
+	}
+	.b-nav > ul > li.b-drop > a{
+		display: none;
+	}
+	.b-nav ul li.b-drop .b-dropdown{
+		position: static;
+		padding: 0;
+		width: auto;
+		box-shadow: none;
+		background: none;
+		opacity: 1;
+		visibility: visible;
+	}
+	.b-cart{
+		margin: 0 15px 0 0;
+	}
+	.b-title-item{
+		font-size: 18px;
+		line-height: 22px;
+	}
+	.b-footer-left{
+		display: block;
+		text-align: center;
+	}
+	.b-footer-logo{
+		margin: 0 auto 20px;
+	}
+	.b-footer-social{
+		width: 100%;
+		justify-content: center;
+		margin: 60px 0;
+	}
+	.b-footer-list{
+		margin: 0;
+	}
+	.b-services-item{
+		margin: 15px 0;
+	}
+	.b-title{
+		margin: 0 0 45px 0;
+	}
+	.b-services{
+		padding: 45px 0;
+	}
+	.b-reviews{
+		padding: 45px 0;
+	}
+	.b-info{
+		padding: 45px 0;
+	}
+	.b-main-left{
+		padding: 60px 0;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	.b-main-title{
+		font-size: 20px;
+		line-height: 30px;
+	}
+	.b-main-left p{
+		margin: 15px 0;
+	}
+	.btn-acc{
+		margin: 30px auto 0;
+	}
 }
 
 @media (max-width: 680px) {
