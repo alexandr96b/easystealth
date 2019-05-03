@@ -62,6 +62,18 @@ $(".del input[type='radio']").change(function() {
 });
 
 
+/*$(".det input[type='radio']").change(function() {
+    if(this.checked) {
+      $(this).parent().next().addClass('active');
+    }else{
+      $(this).parent().next().removeClass('active');
+    }
+});
+*/
+
+
+
+
 });
 
 

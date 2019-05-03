@@ -1543,3 +1543,217 @@ textarea{
 .b-other.active{
 	display: block;
 }
+.b-wrapper{
+	width: 760px;
+	margin: 0 auto 0;
+}
+.cart{
+	overflow: hidden;
+	border-radius: 8px;	
+	background: #FFFFFF;
+	box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.08);
+}
+.cart-top{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #0099FF;
+	padding: 16px 20px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.cart-top__left{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.cart-top__ico{
+	background: url(../images/ico-union.svg) no-repeat;
+	width: 22px;
+	height: 36px;
+	margin: 0 10px 0 0;
+}
+.cart-top__left span{
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 21px;
+	color: #FFFFFF;
+	font-family: 'Istok Web', sans-serif;
+}
+.card-top__right ul{
+	padding: 0;
+	margin: 0;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+.card-top__right ul li{
+	list-style: none;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 20px;
+	color: #FFFFFF;	
+	font-family: 'Istok Web', sans-serif;
+	margin: 0 50px 0 0;
+}
+.card-top__right ul li:last-child{
+	margin: 0;
+}
+
+.cart-content{
+	padding: 30px 20px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.cart-item{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	padding: 0 5px 0 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.cart-item__left{
+
+}
+.cart-item__left b{
+	display: block;
+}
+.btn-del{
+	background: url(../images/del-ico.svg) no-repeat;
+	width: 12px;
+	height: 12px;
+	position: absolute;
+	top: 4px;
+	right: -13px;
+}
+.cart-item__right{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 214px;
+}
+.cart-item__row{
+	font-family: 'Istok Web', sans-serif;
+}
+.cart-item__row b{
+	display: none;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 18px;
+	color: #262626;	
+}
+.cart-item__row span{
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 18px;
+	color: #262626;
+}
+.b-card-input{
+	width: 40px;
+	height: 22px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;	
+	border: 1px solid #909399;
+	box-sizing: border-box;
+	border-radius: 4px;
+	text-align: right;
+	padding: 0 10px 0 0;
+}
+.cart-desc{
+	font-family: 'Istok Web', sans-serif;
+}
+.cart-desc__item{
+	margin: 0 0 15px 0;
+}
+.cart-desc__item:last-child{
+	margin: 0;
+}
+.cart-desc ul{
+	padding: 0;
+	margin: 0;
+}
+.cart-desc ul li{
+	list-style: none;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 25px;	
+	color: #787B80;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.cart-desc ul li b{
+	font-weight: 700;
+}
+.cart-desc b{
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 30px;
+	display: block;
+	color: #787B80;
+	padding: 0 5px 0 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.cart-price{
+	border-top: 1px solid rgba(0, 153, 255, 0.1);
+	font-family: 'Istok Web', sans-serif;
+	padding: 30px 20px 30px 20px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.cart-price span{
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 18px;
+	color: #262626;
+}
+
+.b-checkout{
+
+}
+.b-checkout .cart-top{
+	background: #EBEFF5;
+}
+.b-checkout .cart-top__left span{
+	color: #262626;
+}
+.b-checkout .card-top__right ul li{
+	color: #262626;
+}
+.b-checkout .b-documents-wrap{
+	margin: 0 auto 60px;
+}
+.b-checkout .b-documents-wrap__two{
+	margin: 60px auto 0;
+}
+
+.b-form-drop{
+	margin: 0 0 20px 0;
+	display: none;
+}
+.b-form-drop.active{
+	display: block;
+}
+.b-form-drop .b-form-input{
+	max-width: 340px;
+}
+.b-form-drop p{
+	font-family: 'Istok Web', sans-serif;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 17px;
+	color: #262626;
+	margin: 13px 0 0 0;
+	max-width: 400px;
+}
