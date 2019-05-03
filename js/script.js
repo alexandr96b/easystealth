@@ -28,6 +28,39 @@ $(".b-documents-photo input[type='checkbox']").change(function() {
 
 
 
+$(".b-checkbox-t input[type='checkbox']").change(function() {
+    if(this.checked) {
+      $('.b-transactions').addClass('active');
+    }else{
+      $('.b-transactions').removeClass('active');
+    }
+});
+
+
+$(".b-type input[type='radio']").change(function() {
+    if(this.checked) {
+      $('.b-other').addClass('active');
+    }else{
+      $('.b-other').removeClass('active');
+    }
+});
+
+$(".del input[type='radio']").change(function() {
+    if(this.checked) {
+      $('.b-other').removeClass('active');
+    }else{
+      
+    }
+});
+
+$(".del input[type='radio']").change(function() {
+    if(this.checked) {
+      $('.b-other').removeClass('active');
+    }else{
+
+    }
+});
+
 
 });
 
